@@ -66,6 +66,8 @@ img {
   padding-right: 15px;
   padding-left: 15px;
   outline: 2px solid red;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -74,6 +76,20 @@ img {
 }
 
 /* Header */
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item + .item {
+margin-left: 50px;
+}
+
+.site-nav .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-logo {
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -106,22 +122,21 @@ img {
 /* Hero */
 .hero-section {
   background-color: var(--background-color-second);
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 280px;
+  text-align: center;
 }
 .hero-title {
   color: var(--background-color-first);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-
-  margin-bottom: 30px;
-  min-width: 696px;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .button-index {
   color: var(--background-color-first);
@@ -188,6 +203,8 @@ img {
 /* Footer */
 .footer {
   background-color: var(--background-color-second);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: Raleway, cursive;
@@ -228,6 +245,12 @@ address {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  display: inline-block;
+  min-width: 126px;
+  border-radius: 4px;
+  padding: 6px 25px;
+  margin-bottom: 34px;
+
 }
 .button-portf:hover,
 .button-portf:focus {
@@ -238,10 +261,12 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .gallery-text {
   color: var(--color-text-second);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  padding-bottom: 20px;
 }
