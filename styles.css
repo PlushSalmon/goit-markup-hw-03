@@ -76,29 +76,35 @@ img {
 }
 
 /* Header */
-.site-nav {
+.header-container {
   display: flex;
 }
 
-.site-nav .item + .item {
-margin-left: 50px;
+.header-navigation {
+  display: flex;
+  margin-right: auto;
 }
 
-.site-nav .nav-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-list {
+  display: flex;
+  gap: 50px;
 }
 
 .header-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.03em;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .first-part-hlogo {
   color: var(--color-text-action);
@@ -111,12 +117,16 @@ margin-left: 50px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contact-link {
   color: var(--color-text-second);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+    padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* Hero */
@@ -160,6 +170,11 @@ margin-left: 50px;
 }
 
 /* Our advantages */
+.advant-list {
+  display: flex;
+  gap: 30px;
+}
+
 .advant-title {
   font-size: 14px;
   line-height: 1.14;
@@ -168,6 +183,7 @@ margin-left: 50px;
   margin-bottom: 10px;
 }
 .advant-text {
+  max-width: 270px;
   color: var(--color-text-second);
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -181,23 +197,44 @@ margin-left: 50px;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+/* What-we-are-doing */
+.wawd-list {
+  display: flex;
+  gap: 30px;
+}
 
 /* Our team */
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-item {
+  background-color: var(--background-color-first);
+}
+
 .our-team-section {
   background-color: var(--background-color-third);
 }
 .team-title {
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .team-text {
+  display: flex;
+  justify-content:center;
   color: var(--color-text-second);
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  min-width: 130px;
+  margin-bottom: 30px;
 }
 
 /* Footer */
@@ -236,6 +273,14 @@ address {
 }
 
 /* Portfolio */
+.gallery-button-list {
+  display: flex;
+  gap: 8px;
+  margin: auto;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
 .button-portf {
   color: var(--color-text-first);
   background-color: var(--background-color-third);
@@ -247,9 +292,9 @@ address {
   letter-spacing: 0.03em;
   display: inline-block;
   min-width: 126px;
+  border: initial;
   border-radius: 4px;
   padding: 6px 25px;
-  margin-bottom: 34px;
 
 }
 .button-portf:hover,
@@ -257,6 +302,13 @@ address {
   color: var(--background-color-first);
   background-color: var(--color-text-action);
 }
+
+.gallary-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .gallery-title {
   font-size: 18px;
   line-height: 2;
